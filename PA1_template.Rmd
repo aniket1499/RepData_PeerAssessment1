@@ -80,8 +80,6 @@ IntervalDT[steps == max(steps), .(max_interval = interval)]
 1. Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with 𝙽𝙰s)
 
 ```{r}
-activityDT[is.na(steps), .N ]
-# alternative solution
 nrow(activityDT[is.na(steps),])
 ```
 
